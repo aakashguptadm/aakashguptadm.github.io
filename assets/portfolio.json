@@ -1,7 +1,39 @@
 {
-  "last_updated": "2026-08-12",
+  "last_updated": "2026-11-16",
   "_schema": "Case studies use problem / approach / outcome. `metrics` renders as the stat strip on the card — keep it to 3 entries. `kind` is 'client' for paid work and 'practice' for course/self-directed builds; practice projects are labelled as such on the site so nothing reads as client work that isn't.",
   "projects": [
+    {
+      "title": "Built an AI agent system that runs three client accounts",
+      "client": "Assert IT Solutions, IPEM, Kanha Buildcon",
+      "category": "AI & Automation",
+      "kind": "client",
+      "emoji": "🤖",
+      "metrics": [
+        {
+          "value": "7",
+          "label": "Specialist agents"
+        },
+        {
+          "value": "3",
+          "label": "Client accounts running on it"
+        },
+        {
+          "value": "0",
+          "label": "Extra headcount"
+        }
+      ],
+      "problem": "Running social media for several clients at once, the work that ate the week was never the creative part. It was the repetition around it — rebuilding a content calendar every month, writing the same kind of brief for the designer and the video editor, chasing approvals over email, and assembling the same performance report from the same four dashboards. Each account on its own was manageable. Three in parallel, on a five-posts-a-week cadence, was not.",
+      "approach": "Built a system of seven specialist agents on Claude, each owning one job rather than one big general-purpose prompt — a content strategist that plans the calendar against defined pillars, a copywriter that holds the brand voice, a visual director that writes design briefs against brand guidelines, an engagement manager for comments and DMs, a data analyst for weekly reporting, and an orchestrator that decides what actually goes live. They run as scheduled jobs on Railway rather than as chat sessions, so the weekly cycle happens whether or not I open a laptop. Approvals stayed human and deliberate: briefs go out by email to the designer and video editor, and nothing publishes without a yes. Separately used Google Veo for an AI-generated Hindi festival reel, where native speech generation gave usable lip-sync — something text-to-video with a dubbed track could not.",
+      "outcome": "Three client accounts now run on the same system without adding people. The planning and briefing cycle that used to take a day a week per account is handled by the agents, and the time that frees goes into the parts that need judgement — campaign strategy, creative direction and the client conversation. The useful lesson was about where AI belongs: it is strong at volume and structure, and weak at judgement. Every agent in the system writes a draft and a brief. None of them decide what ships.",
+      "tools": [
+        "Claude",
+        "Google Veo",
+        "Railway",
+        "Python",
+        "Meta Business Suite"
+      ],
+      "date": "June 2026 – present"
+    },
     {
       "title": "Cut cost per purchase by 76% on a ₹399 product",
       "client": "GlowYug",
@@ -9,14 +41,27 @@
       "kind": "client",
       "emoji": "📉",
       "metrics": [
-        { "value": "₹506 → ₹118", "label": "Cost per purchase" },
-        { "value": "3.4x", "label": "ROAS vs 1.4x break-even" },
-        { "value": "₹0", "label": "Extra ad spend" }
+        {
+          "value": "₹506 → ₹118",
+          "label": "Cost per purchase"
+        },
+        {
+          "value": "3.4x",
+          "label": "ROAS vs 1.4x break-even"
+        },
+        {
+          "value": "₹0",
+          "label": "Extra ad spend"
+        }
       ],
       "problem": "GlowYug, a D2C face yoga brand selling a ₹399 digital product, was spending ₹30,000 a month on Meta Ads across 22 campaigns and 31 ad sets. At that price point the account needed a ₹200 cost per purchase just to break even once management cost was included — it was running at more than double that. Budget was spread so thin that no ad set had enough data to optimise against.",
       "approach": "Audited every ad set against the actual unit economics instead of platform benchmarks. Meta was labelling ad sets \"high-performing\" that lost money on a ₹399 product — it compares ad sets to each other, not to your price. Cut everything that couldn't clear a ₹200 CPA across two clean days, kept the two audience angles that could, and held budgets flat through the learning phase instead of reacting to partial-day numbers. Also tested retargeting and shut it down when the data didn't support it.",
       "outcome": "Cost per purchase dropped from ₹506 to ₹118 as the learning phase completed — roughly 3.4x ROAS against a 1.4x break-even. The account went from losing the client money to profitable, with no increase in ad spend.",
-      "tools": ["Meta Ads", "Conversion Tracking", "Unit Economics"],
+      "tools": [
+        "Meta Ads",
+        "Conversion Tracking",
+        "Unit Economics"
+      ],
       "date": "August 2026"
     },
     {
@@ -26,14 +71,28 @@
       "kind": "client",
       "emoji": "📈",
       "metrics": [
-        { "value": "3K → 22K", "label": "Reel reach" },
-        { "value": "100%", "label": "Organic, no paid push" },
-        { "value": "5/week", "label": "Publishing cadence" }
+        {
+          "value": "3K → 22K",
+          "label": "Reel reach"
+        },
+        {
+          "value": "100%",
+          "label": "Organic, no paid push"
+        },
+        {
+          "value": "5/week",
+          "label": "Publishing cadence"
+        }
       ],
       "problem": "A 30-year-old institution had published 1,991 posts and had 2,167 followers — roughly one follower per post. High output, no strategy: static-heavy content, no Reels, and engagement low enough that the algorithm had stopped distributing the account.",
       "approach": "Rebuilt the content strategy around Reels at 60–70% of output, on a fixed five-posts-a-week cadence built for the admission season. Worked around a real constraint — students were off-campus, so the usual student-led content wasn't possible — by leaning on faculty testimonials, cinematic campus b-roll and kinetic-typography stat reels. Rebuilt the grid so the profile people land on after a reel actually holds up. Built an automated system that generates the weekly calendar, briefs the video and design team, and routes every post through an approval loop before publishing.",
       "outcome": "Reels that were reaching 2,300–3,000 people are now reaching 11,000–22,000 — entirely organic, with no paid promotion. Live since June 2026 and running through the admission season.",
-      "tools": ["Instagram", "Content Strategy", "Reels", "Automation"],
+      "tools": [
+        "Instagram",
+        "Content Strategy",
+        "Reels",
+        "Automation"
+      ],
       "date": "June 2026 – present"
     },
     {
@@ -43,15 +102,28 @@
       "kind": "client",
       "emoji": "🎯",
       "metrics": [
-        { "value": "13", "label": "Curated keywords" },
-        { "value": "₹300/day", "label": "vs ₹4,331 recommended" },
-        { "value": "Search", "label": "Not Performance Max" }
+        {
+          "value": "13",
+          "label": "Curated keywords"
+        },
+        {
+          "value": "₹300/day",
+          "label": "vs ₹4,331 recommended"
+        },
+        {
+          "value": "Search",
+          "label": "Not Performance Max"
+        }
       ],
       "problem": "Assert IT Solutions needed lead generation for its Odoo implementation service across Delhi NCR — no campaign history, no conversion tracking.",
       "approach": "Built a Search campaign end to end, deliberately not Performance Max, so targeting stayed under manual control. Curated 13 phrase and exact match keywords around implementation intent, and excluded the generic ERP terms that would have burned budget on wrong-intent traffic. Wrote 8 headlines and 4 descriptions, set up sitelinks, and capped the daily budget at ₹300 against Google's recommended ₹4,331 — which was unrealistic for the business. Installed gtag site-wide on WordPress and configured a lead-form conversion action.",
       "outcome": "Google disapproved the ad, and the second reason mattered more than the campaign itself: the demo site's free shared domain had been flagged by Safe Browsing because of other sites on the same root domain. Nothing inside Google Ads fixes that. I now check a domain's standing before building any campaign on it.",
       "outcome_label": "What it taught me",
-      "tools": ["Google Ads", "Conversion Tracking", "WordPress"],
+      "tools": [
+        "Google Ads",
+        "Conversion Tracking",
+        "WordPress"
+      ],
       "date": "July 2026"
     }
   ]
